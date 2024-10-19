@@ -42,7 +42,7 @@ instructions every CPU cycle. (The first implementation issues two
 instructions per cycle.)
 
 Alpha makes it easy to maintain binary compatibility across multiple
-implementations and easy to maintqin full speed on multiple-issue
+implementations and easy to maintain full speed on multiple-issue
 implementations. For example, there are no implementation-specific pipeline
 timing hazards, no load-delay slots, and no branch-delay slots.
 
@@ -422,13 +422,13 @@ including bits 7, 6, 5, 4, and 3.
 
 In this document the terms ALIGNED and NATURALLY ALIGNED are used
 interchangeably to refer to data objects that are powers of two in size. An
-aligned datum of size 2<sup>\*\*</sup>N is stored in memory at a byte address
-that is a multiple of 2<sup>\*\*</sup>N, that is, one that has N low-order
-zeros. Thus, an aligned 64-byte stack frame has a memory address that is a
-multiple of 64.
+aligned datum of size 2<sup>N</sup> is stored in memory at a byte address
+that is a multiple of 2<sup>N</sup>, that is, one that has N low-order zeros.
+Thus, an aligned 64-byte stack frame has a memory address that is a multiple
+of 64.
 
-If a datum of size 2<sup>\*\*</sup>N is stored at a byte address that is not
-a multiple of 2<sup>\*\*</sup>N, it is called UNALIGNED.
+If a datum of size 2<sup>N</sup> is stored at a byte address that is not a
+multiple of 2<sup>N</sup>, it is called UNALIGNED.
 
 ### Must Be Zero (MBZ)
 

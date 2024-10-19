@@ -145,9 +145,9 @@ the instruction always produces a datum with a sign bit of 0, an exponent of
 exponents of -127..127. An exponent value of 0, together with a sign bit of
 1, is taken as a reserved operand. Floating-point instructions processing a
 reserved operand take an arithmetic exception. The value of an F_floating
-datum is in the approximate range 0.29\*10\*\*-38..1.7\*10\*\*38. The
-precision of an F_floating datum is approximately one part in 2\*\*23,
-typically 7 decimal digits.
+datum is in the approximate range 0.29×10<sup>-38</sup>..1.7×10<sup>38</sup>.
+The precision of an F_floating datum is approximately one part in
+2<sup>23</sup>, typically 7 decimal digits.
 
 > #### Note
 >
@@ -190,8 +190,9 @@ exponents of -1023..1023. An exponent value of 0, together with a sign bit of
 1, is taken as a reserved operand. Floating-point instructions processing a
 reserved operand take a user-visible arithmetic exception. The value of a
 G_floating datum is in the approximate range
-0.56\*10\*\*-308..0.9\*10\*\*308. The precision of a G_floating datum is
-approximately one part in 2\*\*52, typically 15 decimal digits.
+0.56×10<sup>-308</sup>..0.9×10<sup>308</sup>. The precision of a G_floating
+datum is approximately one part in 2<sup>52</sup>, typically 15 decimal
+digits.
 
 > #### Note
 >
@@ -227,7 +228,7 @@ F_floating datum except for 32 additional low significance fraction bits.
 Within the fraction, bits of increasing significance are from 48 through 63,
 32 through 47, 16 through 31, and 0 through 6. The exponent conventions and
 approximate range of values is the same for D_floating as F_floating. The
-precision of a D_floating datum is approximately one part in 2\*\*55,
+precision of a D_floating datum is approximately one part in 2<sup>55</sup>,
 typically 16 decimal digits.
 
 > #### Note
@@ -262,7 +263,7 @@ specified by using three integer parameters:
 
 Within each format, only the following entities are permitted:
 
-1. Numbers of the form (-1)\*\*S × 2\*\*E × b(0).b(1)b(2)..b(P-1) where:
+1. Numbers of the form (-1)<sup>S</SUP> × 2<sup>E</sup> × b(0).b(1)b(2)..b(P-1) where:
    1. S = 0 or 1
    2. E = any integer between Emin and Emax, inclusive
    3. b(n) = 0 or 1
@@ -338,11 +339,11 @@ bits <22:0> a 23-bit fraction.
 The value (V) of an S_floating number is inferred from its constituent sign
 (S), exponent (E), and fraction (F) fields as follows:
 
-1. If E=255 and F<>0, then V is NaN, regardless of S.
-2. If E=255 and F=0, then V = (-l)\*\*S × Infinity.
-3. If 0 < E < 255, then V = (-l)\*\*S × 2\*\*(E-127) × (1.F).
-4. If E=0 and F<>0, then V = (-l)\*\*S × 2\*\*(-126) × (0.F).
-5. If E=0 and F=0, then V = (-1)\*\*S × 0 (zero).
+1. If E = 255 and F ≠ 0, then V is NaN, regardless of S.
+2. If E = 255 and F = 0, then V = (-1)<sup>S</sup> × Infinity.
+3. If 0 < E < 255, then V = (-1)<sup>S</sup> × 2<sup>(E-127)</sup> × (1.F).
+4. If E = 0 and F ≠ 0, then V = (-1)<sup>S</sup> × 2<sup>(-126)</sup> × (0.F).
+5. If E = 0 and F = 0, then V = (-1)<sup>S</sup> × 0 (zero).
 
 Floating-point operations on S_floating numbers may take an arithmetic
 exception for a variety of reasons, including invalid operations, overflow,
@@ -387,11 +388,11 @@ a 52-bit fraction.
 The value (V) of a T_floating number is inferred from its constituent sign
 (S), exponent (E), and fraction (F) fields as follows:
 
-1. If E=2047 and F<>0, then V is NaN, regardless of S.
-2. If E=2047 and F=0, then V = (-1)\*\*S × Infinity.
-3. If 0 < E < 2047, then V = (-1)\*\* × 2\*\*(E-1023) × (1.F).
-4. If E=0 and F<>0, then V = (-1)\*\*S × 2\*\*(-1022) × (0.F).
-5. If E=0 and F=0, then V = (-1)\*\*S × 0 (zero).
+1. If E = 2047 and F ≠ 0, then V is NaN, regardless of S.
+2. If E = 2047 and F = 0, then V = (-1)<sup>S</sup> × Infinity.
+3. If 0 < E < 2047, then V = (-1)<sup>S</sup> × 2<sup>(E-1023)</sup> × (1.F).
+4. If E = 0 and F ≠ 0, then V = (-1)<sup>S</sup> × 2<sup>(-1022)</sup> × (0.F).
+5. If E = 0 and F = 0, then V = (-1)<sup>S</sup> × 0 (zero).
 
 Floating-point operations on T_floating numbers may take an arithmetic
 exception for a variety of reasons, including invalid operations, overflow,
