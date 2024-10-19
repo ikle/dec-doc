@@ -18,6 +18,8 @@ Following are descriptions of the Alpha architecture data types.
 A byte is 8 contiguous bits starting on an addressable byte boundary. The
 bits are numbered from right to left, 0 through 7, as shown in Figure 2-1.
 
+![image](fig-2-1.png "Figure 2-1 • Byte Format")
+
 _Figure 2-1 • Byte Format_
 
 A byte is specified by its address A. A byte is an 8-bit value. The byte is
@@ -27,6 +29,8 @@ only supported in Alpha by the extract, mask, insert, and zap instructions.
 
 A word is 2 contiguous bytes starting on an arbitrary byte boundary. The bits
 are numbered from right to left, 0 through 15, as shown in Figure 2-2.
+
+![image](fig-2-2.png "Figure 2-2 • Word Format")
 
 _Figure 2-2 • Word Format_
 
@@ -39,6 +43,8 @@ mask, and insert instructions.
 
 A longword is 4 contiguous bytes starting on an arbitrary byte boundary. The
 bits are numbered from right to left, 0 through 31, as shown in Figure 2-3.
+
+![image](fig-2-3.png "Figure 2-3 • Longword Format")
 
 _Figure 2-3 • Longword Format_
 
@@ -60,6 +66,8 @@ instructions and by longword arithmetic instructions.
 
 A quadword is 8 contiguous bytes starting on an arbitrary byte boundary. The
 bits are numbered from right to left, 0 through 63, as shown in Figure 2-4.
+
+![image](fig-2-4.png "Figure 2-4 • Quadword Format")
 
 _Figure 2-4 • Quadword Format_
 
@@ -88,10 +96,14 @@ An F_floating datum is 4 contiguous bytes in memory starting on an arbitrary
 byte boundary. The bits are labeled from right to left, 0 through 31, as
 shown in Figure 2-5.
 
+![image](fig-2-5.png "Figure 2-5 • F_floating Datum")
+
 _Figure 2-5 • F_floating Datum_
 
 An F_floating operand occupies 64 bits in a floating register, left-justified
 in the 64-bit register, as shown in Figure 2-6.
+
+![image](fig-2-6.png "Figure 2-6 • F_floating Register Format")
 
 _Figure 2-6 • F_floating Register Format_
 
@@ -150,10 +162,14 @@ A G_floating datum in memory is 8 contiguous bytes starting on an arbitrary
 byte boundary. The bits are labeled from right to left, 0 through 63, as
 shown in Figure 2-7.
 
+![image](fig-2-7.png "Figure 2-7 • G_floating Datum")
+
 _Figure 2-7 • G_floating Datum_
 
 A G_floating operand occupies 64 bits in a floating register, arranged as
 shown in Figure 2-8.
+
+![image](fig-2-8.png "Figure 2-8 • G_floating Format")
 
 _Figure 2-8 • G_floating Format_
 
@@ -190,10 +206,14 @@ A D_floating datum in memory is 8 contiguous bytes starting on an arbitrary
 byte boundary. The bits are labeled from right to left, 0 through 63, as
 shown in Figure 2-9.
 
+![image](fig-2-9.png "Figure 2-9 • D_floating Datum")
+
 _Figure 2-9 • D_floating Datum_
 
 A D_floating operand occupies 64 bits in a floating register, arranged as
 shown in Figure 2-10.
+
+![image](fig-2-10.png "Figure 2-10 • D_floating Register Format")
 
 _Figure 2-10 • D_floating Register Format_
 
@@ -270,10 +290,14 @@ An IEEE single-precision, or S_floating, datum occupies 4 contiguous bytes in
 memory starting on an arbitrary byte boundary. The bits are labeled from
 right to left, 0 through 31, as shown in Figure 2-11.
 
+![image](fig-2-11.png "Figure 2-11 • S_floating Datum")
+
 _Figure 2-11 • S_floating Datum_
 
 An S_floating operand occupies 64 bits in a floating register, left-justified
 in the 64-bit register, as shown in Figure 2-12.
+
+![image](fig-2-6.png "Figure 2-12 • S_floating Register Format")
 
 _Figure 2-12 • S_floating Register Format_
 
@@ -337,10 +361,14 @@ An IEEE double-precision, or T_floating, datum occupies 8 contiguous bytes in
 memory starting on an arbitrary byte boundary. The bits are labeled from
 right to left, 0 through 63, as shown in Figure 2-13.
 
+![image](fig-2-13.png "Figure 2-13 • T_floating Datum")
+
 _Figure 2-13 • T_floating Datum_
 
 A T_floating operand occupies 64 bits in a floating register, arranged as
 shown in Figure 2-14.
+
+![image](fig-2-8.png "Figure 2-14 • T_floating Register Format")
 
 _Figure 2-14 • T_floating Register Format_
 
@@ -381,10 +409,14 @@ underflow, division by zero, and inexact results.
 A longword integer operand occupies 32 bits in memory, arranged as shown in
 Figure 2-15.
 
+![image](fig-2-15.png "Figure 2-15 • Longword Integer Datum")
+
 _Figure 2-15 • Longword Integer Datum_
 
 A longword integer operand occupies 64 bits in a floating register, arranged
 as shown in Figure 2-16.
+
+![image](fig-2-16.png "Figure 2-16 • Longword Integer Floating-Register Format")
 
 _Figure 2-16 • Longword Integer Floating-Register Format_
 
@@ -395,7 +427,7 @@ exponent mapping. They are ignored by S_floating store. They are also ignored
 in operands of a longword integer operate instruction, and they are set to
 000 in the result of a longword operate instruction.
 
-The register format bit <62>, “1”, in Figure 2-16 is part of the Integer Hi
+The register format bit <62>, “I”, in Figure 2-16 is part of the Integer Hi
 field in Figure 2-15 and represents the high-order bit of that field. Bits
 <58:45> of Figure 2-16 are the remaining bits of the Integer Hi field of
 Figure 2-15.
@@ -411,10 +443,14 @@ Figure 2-15.
 A quadword integer operand occupies 64 bits in memory, arranged as shown in
 Figure 2-17.
 
+![image](fig-2-17.png "Figure 2-17 • Quadword Integer Datum")
+
 _Figure 2-17 • Quadword Integer Datum_
 
 A quadword integer operand occupies 64 bits in a floating register, arranged
 as shown in Figure 2-18.
+
+![image](fig-2-18.png "Figure 2-18 • Quadword Integer Floating-Register Format")
 
 _Figure 2-18 • Quadword Integer Floating-Register Format_
 

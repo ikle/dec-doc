@@ -175,6 +175,8 @@ As shown in Figure 1-1, Alpha instructions are all 32 bits in length. As
 represented in Figure 1-1, there are four major instruction format classes
 that contain 0, 1, 2, or 3 register fields. All formats have a 6-bit opcode.
 
+![image](fig-1-1.png "Figure 1-1 • Instruction Format Overview")
+
 _Figure 1-1 • Instruction Format Overview_
 
 - **PALcode instructions** specify, in the function code field, one of a few
