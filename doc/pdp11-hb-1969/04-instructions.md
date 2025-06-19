@@ -1022,6 +1022,11 @@ Double precision negation is accomplisheg bith:
 	NEG  B1		; negate high-order part
 ```
 
+Editor's note, condition codes should be:
+
+* V: set if (dst) was 100000 and (C) was 1; cleared otherwise
+* C: set if (dst) was 0 and (C) was 1; cleared otherwise
+
 ### Rotates
 
 Testing of sequential bits of a word and detailed bit manipulation are aided
