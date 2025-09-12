@@ -123,8 +123,12 @@ addressing is
 
 ![Fig 3-8](i/fig-021-1.png "Address Field — Autodecrement")
 
-This mode also may be deferred and specified by instructions of the form OPR
-@-(R). When deferred the address field is
+This mode also may be deferred. Instructions of the form
+
+    OPR @-(R)
+
+specify deferred autodecrement addressing and assemble with the following
+address field.
 
 ![Fig 3-9](i/fig-021-2.png "Address Field — Autodecrement Deferred Mode")
 
