@@ -929,9 +929,9 @@ notation the most negative number has no positive counterpart.)
 
 ![TST](i/fig-040-3-tst.png)
 
-Operation: 0 - (dst)
+Operation: (dst) → (dst)
 
-Condition Codes as in CMP #0, dst:
+Condition Codes as in CMP dst, #0:
 
 * N: set if the result is < 0; cleared otherwise
 * Z: set if the result is 0; cleared otherwise
@@ -940,6 +940,9 @@ Condition Codes as in CMP #0, dst:
 
 Description: Sets the condition codes Z and N according to the contents of
 the destination address.[^4]
+
+Editor's note: The original document indicated operation 0 - (dst), the data
+was corrected according to PDP11/40 Processor Handbook, 1972.
 
 [^4]: See the note for the CMP instruction.
 
@@ -1346,11 +1349,14 @@ Description: Same as NEG.
 
 ![TSTB](i/fig-047-2-tstb.png)
 
-Operation: 0 - (dst)
+Operation: (dst) → (dst)
 
 Condition Codes: Set on the byte result as TST.
 
 Description: Same as TST.[^6]
+
+Editor's note: The original document indicated operation 0 - (dst), the data
+was corrected according to PDP11/40 Processor Handbook, 1972.
 
 [^6]: See the note for the CMP instruction.
 
