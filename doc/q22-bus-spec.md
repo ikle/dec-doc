@@ -131,8 +131,7 @@ power/ground, and spare functions of the Q22-Bus.
 | Name    | Pin Assignment | Name    | Pin Assignment |
 | ------- | -------------- | ------- | -------------- |
 | +5      | AA2            | +5      | BA2            |
-| -12     | AB2 ?          | -12     | BB2            |
-| +12     | AB2 ?          |
+| -12     | AB2            | -12     | BB2            |
 | GND     | AC2            | GND     | BC2            |
 | +12     | AD2            | +12     | BD2            |
 | GND     | AJ1            | GND     | BJ1            |
@@ -149,7 +148,7 @@ power/ground, and spare functions of the Q22-Bus.
 | SSpare2 | АF1            |         | ~~BF1~~        |
 | SSpare3 | АН1            | SSраге8 | ВН1            |
 | MSpareA | AK1            | MSpareB | BK1            |
-| MSpareB | АL1            | MSpareB | BL1            |
+| MSpareA | АL1            | MSpareB | BL1            |
 | PSpare1 | AU1            | ASpare2 | BU1            |
 
 1. SSpare BE1 now ВDAL20
