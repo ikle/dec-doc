@@ -1,1 +1,1 @@
-# Collection of Historic Digital Documens
+# Collection of Historic Digital Documents
